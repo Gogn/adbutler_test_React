@@ -9,17 +9,14 @@ export const StaticAd = ({setID}) => {
   const [ad, setAd] = useState({})
   const [isLoading, setIsLoading] = useState(true)
 
-  const getAd = async () => {
+  useEffect(() => {
+    // getAd()
     axios.get(`https://servedbyadbutler.com/adserve/;ID=${ID};size=0x0;setID=${setID};type=json;click=CLICK_MACRO_PLACEHOLDER`)
       .then(function (response) {
         setAd(response.data.placements.placement_1)
         setIsLoading(false)
       })
-  }
-
-  useEffect(() => {
-    getAd()
-  }, [])
+  }, [setID])
 
   return (
     <div>
@@ -46,6 +43,7 @@ export const StaticAd = ({setID}) => {
             <img
               src={ad.accupixel_url}
               style={{display: 'none', width: '0', height: '0'}}
+              alt={''}
             />
           </MDBView>
       }

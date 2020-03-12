@@ -10,7 +10,8 @@ export const Carousel = ({length, setID}) => {
   const [ads, setAds] = useState([])
   const [isLoading, setIsLoading] = useState(true)
 
-  const getAds = async () => {
+  useEffect(() => {
+    // getAds()
     for (let i = 0; i < length; i++) {
       axios.get(`https://servedbyadbutler.com/adserve/;ID=${ID};size=0x0;setID=${setID};type=json;click=CLICK_MACRO_PLACEHOLDER`)
         .then(function (response) {
@@ -21,7 +22,7 @@ export const Carousel = ({length, setID}) => {
         })
     }
     setIsLoading(false)
-  }
+  },[length, setID])
 
   const AdsCarousel = () => {
     return (
@@ -62,12 +63,6 @@ export const Carousel = ({length, setID}) => {
     )
   }
 
-  useEffect(() => {
-    getAds()
-  },[])
-
-  console.log(ads)
-
   return (
     <>
       { isLoading ?
@@ -77,10 +72,7 @@ export const Carousel = ({length, setID}) => {
           </div>
         </div>
         :
-        AdsCarousel()
-      }
-      {/*{console.log('asd')}*/}
-      {/*{console.log(AdsCarousel())}*/}
+        AdsCarousel() }
     </>
   );
 }
