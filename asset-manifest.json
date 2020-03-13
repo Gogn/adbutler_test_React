@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/adbutler_test_React/static/css/main.eb06799a.chunk.css",
+    "main.js": "/adbutler_test_React/static/js/main.8c5c9267.chunk.js",
+    "main.js.map": "/adbutler_test_React/static/js/main.8c5c9267.chunk.js.map",
+    "runtime-main.js": "/adbutler_test_React/static/js/runtime-main.e46d44d8.js",
+    "runtime-main.js.map": "/adbutler_test_React/static/js/runtime-main.e46d44d8.js.map",
+    "static/css/2.79773a65.chunk.css": "/adbutler_test_React/static/css/2.79773a65.chunk.css",
+    "static/js/2.515656d6.chunk.js": "/adbutler_test_React/static/js/2.515656d6.chunk.js",
+    "static/js/2.515656d6.chunk.js.map": "/adbutler_test_React/static/js/2.515656d6.chunk.js.map",
+    "index.html": "/adbutler_test_React/index.html",
+    "precache-manifest.2cb4f69ff9fdc490df43b3c9e5d106a8.js": "/adbutler_test_React/precache-manifest.2cb4f69ff9fdc490df43b3c9e5d106a8.js",
+    "service-worker.js": "/adbutler_test_React/service-worker.js",
+    "static/css/2.79773a65.chunk.css.map": "/adbutler_test_React/static/css/2.79773a65.chunk.css.map",
+    "static/css/main.eb06799a.chunk.css.map": "/adbutler_test_React/static/css/main.eb06799a.chunk.css.map",
+    "static/js/2.515656d6.chunk.js.LICENSE.txt": "/adbutler_test_React/static/js/2.515656d6.chunk.js.LICENSE.txt",
+    "static/media/mdb.css": "/adbutler_test_React/static/media/arrow_right.8ef6a08c.svg",
+    "static/media/all.min.css": "/adbutler_test_React/static/media/fa-solid-900.cdfec5cf.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e46d44d8.js",
+    "static/css/2.79773a65.chunk.css",
+    "static/js/2.515656d6.chunk.js",
+    "static/css/main.eb06799a.chunk.css",
+    "static/js/main.8c5c9267.chunk.js"
+  ]
+}
